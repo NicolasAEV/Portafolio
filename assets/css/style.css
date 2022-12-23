@@ -1,0 +1,278 @@
+/*colores*/
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    --fondo: #f3f3f3;
+    --aqua: #5292c6;
+    --pronom: #4C4C4C;
+    --cards: #d0d0d0;
+    --des: #b0b0b0;
+    --blanco: #ffffff;
+    --plminto: #5f5f5f;
+}
+
+.body {
+    background-color: var(--fondo);
+}
+
+.navbar {
+    background-color: var(--blanco);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: var(--aqua);
+}
+
+
+
+.container-1 {
+
+    width: 1600px;
+    margin: 0px auto;
+}
+
+.container-2 {
+    padding: 2px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.car {
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 1400px;
+
+}
+
+.car img {
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+.cards {
+    width: 285px;
+    height: 310px;
+    border: 0.1px solid var(--fondo);
+    border-radius: 10px;
+    margin: 10px 20px 10px 10px;
+}
+
+.cards:hover {
+    box-shadow: 4px 4px 15px 4px var(--cards);
+}
+
+.cards img {
+    width: 100%;
+    height: 165px;
+    border-radius: 10px;
+}
+
+.cards h5,
+p,
+.buy {
+    margin-left: 20px;
+}
+
+.cards .producto {
+    color: var(--pronom);
+    text-align: center;
+}
+
+.cards .descripcion {
+    color: var(--des);
+    font-size: 1rem;
+}
+
+.cards .info {
+    display: flex;
+    margin-top: 40px;
+}
+
+.buy {
+    padding: 5px 15px 5px 15px;
+    border: 1px solid #c6c6c6;
+    color: #c6c6c6;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.buy:hover {
+    color: var(--aqua);
+    border: 1px var(--aqua) solid;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.container-footer {
+    width: 1600px;
+    margin: 0px auto;
+}
+
+footer {
+    background-color: var(--blanco);
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+footer ul,
+li {
+    list-style: none;
+}
+
+footer li {
+    margin: 30px 0px 0px 0px;
+}
+
+footer img {
+    float: right;
+    display: block;
+    width: 150px;
+    height: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0px 40px 0px 50px;
+    color: var(--plminto);
+}
+
+/* resposive */
+
+@media screen and (max-width: 1200px) {
+    .container-1 {
+        width: 1200px;
+        margin: 0px auto;
+    }
+
+    .car {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 1100px;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container-1,
+    .container-footer {
+        width: 950px;
+        margin: 0px auto;
+    }
+
+    .car {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 920px;
+    }
+
+    footer img {
+        margin: 0px auto;
+        width: 150px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-1,
+    .container-footer {
+        width: 760px;
+        margin: 0px auto;
+    }
+
+    .car {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 700px;
+    }
+  
+    .cards {
+        width: 225px;
+        height: 310px;
+        border: 0.1px solid var(--fondo);
+        border-radius: 10px;
+        margin: 10px 10px 10px 10px;
+    }
+    .buy{
+        padding: 3px 12px 3px 12px;
+        border: 1px solid #c6c6c6;
+        color: #c6c6c6;
+        border-radius: 10px;
+        background-color: white;
+        font-weight: bold;
+    }
+
+    footer img {
+        margin: 0px auto;
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container-1,
+    .container-footer {
+        width: 450px;
+        margin: 0px auto;
+    }
+
+    .car {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 400px;
+    }
+
+    footer img {
+        margin: 0px auto;
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px)and (min-width: 320px) {
+
+    .container-1,
+    .container-footer {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .car {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    footer img {
+        margin: 0px auto;
+        width: 150px;
+        height: 200px;
+    }
+}
