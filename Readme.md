@@ -2,6 +2,7 @@
 1. [De que trata el proyecto]
 2. [que tecnologias se usaron?]
 3. [Dependencias?]
+4. [github y deploy pages]
 
 ### De que trata el proyecto
 ***
@@ -29,4 +30,7 @@ al no utilizar ningun tipo de framework como node no necesitamos intalar las dep
 $ git clone https://example.com
 $ cd ../path/to/the/file
 ```
-
+## github y deploy pages
+***
+perfil github https://github.com/NicolasAEV/Portafolio
+deploy https://nicolasaev.github.io/Portafolio/
