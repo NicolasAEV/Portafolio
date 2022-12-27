@@ -1,10 +1,7 @@
 import { carritos } from './object.js';
 
 //variables
-// const img = document.querySelector('.imagen-game');
-// const nombre = document.querySelector('.producto');
-// const descripcion = document.querySelector('.descripcion');
-// const precio = document.querySelector('.precio');
+
 const con = document.querySelector('.container-2');
 
 
@@ -15,26 +12,35 @@ for (let i = 0; i < carritos.length; i++) {
   //establecemos la decendencia que vamos a insertar
   row.innerHTML = `<div class="cards">
     <img class="imagen-game" src="${carritos[i].imagen}"       alt="imagen del juego">
-                       <h5 class="producto">${carritos[i].nombre}</h3>
-                        <div class="info">
-                          <p class="precio">precio: $${carritos[i].precio}</p>
-                            <a class="buy" id="buy" value="${carritos[i].Id}" href="" >Comprar</a>
+    <h5 class="producto">${carritos[i].nombre}</h3>
+    <p class="precio">precio: $${carritos[i].precio}</p>
+     <div class="info">
+     <a class="buy" id="details" data-id="${carritos[i].id}" href="" >Detalles</a>
+     <a class="buy" id="buy" data-id="${carritos[i].id}" href="" >Comprar</a>
                         </div>
-                        </div>   `;
+                        </div>`;
 
   //add la decendencia
   con.appendChild(row);
-  const btn1 = document.querySelectorAll('.buy');
 
-  btn1.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      alert(button)
-      // button.href = './product.html';
-    })
-  });
+  // ///
+  // const btn1 = document.querySelectorAll('#details');
+
+  // btn1.forEach((button) => {
+  //   button.addEventListener('click', (e) => {
+  //     const param = e.target.value;
+  //     button.href = './details.html/'+param;
+  //   })
+  // });
 
 }
-
-
-
+const btn1 = document.querySelectorAll("#details");
+btn1.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    //console.log(e.target.dataset.id);
+    let param = e.target.dataset.id;
+    location.href = "./details.html?id=" + param;
+  });
+});
 // console.log(btn1)

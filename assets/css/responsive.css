@@ -127,23 +127,22 @@
     }
     .cards .info {
         display: flex;
+        
         margin-top: 10px;
     }
     
     .buy {
-        padding: 2px ;
+        padding: 1px ;
         border: 1px solid #c6c6c6;
         color: #c6c6c6;
         border-radius: 10px;
         background-color: white;
         font-weight: bold;
-        margin-right: 2px 5px 2px 5px;
+        margin: 2px 2px 2px 5px;
     }
-
-    footer img {
-        float: left;
+  
+    footer img { 
         width: 150px;
-        height: 200px;
     }
 }
 /* responsive 480px */
@@ -167,7 +166,7 @@
     }
 
     .cards {
-        width: 215px;
+        width: 255px;
         height: 250px;
         border: 0.1px solid var(--fondo);
         border-radius: 10px;
@@ -189,7 +188,7 @@
     footer img {
         float: left;
         width: 150px;
-        height: 200px;
+      
     }
 }
 /* responsive 320px */
@@ -230,6 +229,6 @@
     footer img {
         float: left;
         width: 150px;
-        height: 200px;
+       
     }
 }
