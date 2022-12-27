@@ -15,13 +15,13 @@ if(juego){
     //establecemos la decendencia que vamos a insertar
     row.innerHTML = `<div class="row">
     <div class="col-12	col-sm-6 col-md-6	col-lg-6 col-xl-6 col-xxl-6">
-      <img src="${juego.imagen}" alt="" width="100%" style=" border-radius: 10px;">
+      <img src="${juego.imagen}" alt="" width="100%" style=" border-radius: 10px;margin: 30px; ">
     </div>
     <div class="col-12	col-sm-6 col-md-6	col-lg-6 col-xl-6 col-xxl-6">
-      <h1>${juego.nombre}</h1>
-      <p>${juego.descripcion}</p>
-      <p>precio: ${juego.precio}</p>
-      <a class="buy" id="buy" data-id="${juego.id}" href="" >Comprar</a>
+      <h1 style="margin: 30px;">${juego.nombre}</h1>
+      <p style="margin: 30px;">${juego.descripcion}</p>
+      <p style="margin: 30px;">precio: ${juego.precio}</p>
+      <a class="buy" id="buy" data-id="${juego.id}" href=""style="margin: 30px;" >Comprar</a>
     </div>
   </div>`;
   
